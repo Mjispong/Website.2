@@ -3,121 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercise 8: Responsive Web Design</title>
-<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
+<title>The Gallery</title>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet"> 
 <style>
-/* Created by Matt Spong 2025-03-14*/
-  
-  #headline {
-    position: relative;
-    background-image: url('Background-white.jpg'); /* Set the image as a background */
-    background-size: cover; /* Ensure the image covers the div */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2em; /* Adds space inside the div so text doesn't touch edges */
-    text-align: center;
-    
-    
-}
+/* Updated by Claude for gallery layout */
 
-  
 body {
-    font-family: "Pacifico", cursive;
-    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
     background-color: white;
 }
 
-ul a {
-    color: magenta;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-p, h1, h2, ul, img {
-    margin-left: 0;
-}
-
-img {
-    margin-top: 20px;
-    display: block;
-}
-
-p, #subhead {
-    background-color: #eee;
-    opacity: .9;
-    font-weight: lighter;
-}
-
-    display: block;
-
-p {
-    padding: 1em 1em 1em 20px;
-}
-
-
-  h1, li, h2 {
-    font-family: "Roboto", sans-serif;
+#headline {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
     color: black;
-    padding: .375em;
+    font-weight: normal;
+    margin: 0;
 }
 
-h2 {
-    font-size: 1.5em;
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: .375em;
-    margin-top: 0;
-    margin-bottom: 0;
+.content-section {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
+.text-block {
+    background-color: white;
+    width: 70%;
+    padding: 20px 40px;
+    text-align: center;
+    line-height: 1.6;
+}
 
+.image-container {
+    width: 70%;
+    background-color: white;
+    margin: 20px auto 40px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-placeholder {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Responsive styles */
 @media (max-width: 600px) {
-    body {
-        background-color: yellow;
-        font-size: 0.75em; 
+    .text-block, .image-container {
+        width: 90%;
     }
-
-    img, p {
-        width: 100%;
+    
+    .image-placeholder {
+        height: 200px;
     }
-}
-
-@media (min-width: 601px) {
-    img {
-        width: 800px;
-    }
-
-    p {
-        width: 600px;
+    
+    h1 {
+        font-size: 36px;
     }
 }
 </style>
 </head>
 <body>
-<div id="headline"><h1>The Gallery</h1></div>
-<p>...and we're going to design a desktop and a mobile view for it!</p>
-   <img src="Photos.213.png" alt="Additional Image">
-<h2>Table of Contents:</h2>
-   <img src="Cooby.1.png" alt="Additional Image">
-<ul>
-    <li><a href="#One">One</a></li>
-    <li><a href="#Two">Two</a></li>
-    <li><a href="#Three">Three</a></li>
-    <li><a href="#Four">Four</a></li>
-</ul>
-<h2><a name="One">One</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-<h2><a name="Two">Two</a></h2>
-<p>Integer in elit ut odio vestibulum sagittis...</p>
-<h2><a name="Three">Three</a></h2>
-
-<p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa...</p>
-<h2><a name="Four">Four</a></h2>
-<p>Morbi vestibulum massa vitae tortor vehicula rhoncus...</p>
-   <img src="Background-white.brick.jpg" alt="Additional Image">
-  
+<div class="container">
+    <div id="headline">
+        <h1>The Gallery</h1>
+    </div>
+    
+    <div class="content-section">
+        <div class="text-block">
+            <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <div class="image-placeholder">
+            IMAGE
+        </div>
+    </div>
+    
+    <div class="content-section">
+        <div class="text-block">
+            <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
