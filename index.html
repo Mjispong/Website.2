@@ -71,6 +71,45 @@ h1 {
     align-items: center;
     font-weight: bold;
 }
+  
+   .navigation {
+      display: flex;
+      justify-content: space-between;
+      background-color: #e9e9e9;
+      margin-bottom: 2rem;
+    }
+    
+    .nav-item {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      background-color: #e9e9e9;
+      transition: background-color 0.3s;
+    }
+    
+    .nav-item:hover {
+      background-color: #d4d4d4;
+    }
+    
+    .nav-item a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+  
+   /* Footer/Contact section */
+    .footer {
+      background-color: #e9e9e9;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .footer h2 {
+      margin-bottom: 0.5rem;
+    }
+  
+  
 
 /* Responsive styles */
 @media (max-width: 600px) {
@@ -111,6 +150,23 @@ h1 {
             <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum</p>
         </div>
     </div>
+  
+    <nav class="navigation">
+      <div class="nav-item"><a href="#">Home</a></div>
+      <div class="nav-item"><a href="#">The Gallery</a></div>
+      <div class="nav-item"><a href="#">About Me</a></div>
+      <div class="nav-item"><a href="#">Contact Me</a></div>
+    </nav>
+    
+    <!-- Decorative divider -->
+         <img src="Star.image.jpg" alt="Additional Image">
+
+    
+    <!-- Footer/Contact section -->
+    <footer class="footer">
+      <h2>Contact info -Help - Etc.</h2>
+    </footer>
+  
 </div>
 </body>
 </html>
