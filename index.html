@@ -4,20 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact Me</title>
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Georgia|Roboto|Playfair+Display" rel="stylesheet"> 
 <style>
-  
-  #headline {
-    position: relative;
-    background-image: url('Background-white.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-  
+  /* Created by Matt Spong on 2025-04-06*/
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -33,37 +23,35 @@ body {
 }
 
 #headline {
+    position: relative;
+    background-image: url('Background-white.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
     text-align: center;
-    padding: 40px 0;
     margin-bottom: 20px;
 }
-  p, #subhead {
-     font-style: italic;
-      text-align: center;
-      max-width: 600px;
-      margin: 1.5rem auto 3rem;
-      font-size: 1.8rem;
-      line-height: 1.5;
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    color: black;
+    font-weight: normal;
+    margin: 0;
 }
 
-h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 48px;
-    color: black;
-    font-weight: normal;
-    margin: 0;
+p, #subhead {
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    margin: 1.5rem auto 3rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
-  
-  h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 48px;
-    color: black;
-    font-weight: normal;
-    margin: 0;
-  }
 
 .content-section {
-    background-color: #e0e0e0;
+    background-color: #333;
     width: 100%;
     padding: 40px 0;
     margin-bottom: 40px;
@@ -79,6 +67,28 @@ h1 {
     line-height: 1.6;
 }
 
+.contact-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.contact-table th, .contact-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-table th {
+    background-color: #EF6024;
+    color: white;
+    font-weight: normal;
+}
+
+.contact-table tr:hover {
+    background-color: #f5f5f5;
+}
+
 .image-container {
     width: 70%;
     background-color: white;
@@ -88,12 +98,10 @@ h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-  
-   /* Navigation Crap */
+/* Navigation */
 .navigation {
     display: flex;
     justify-content: space-between;
-    background-color: #e9e9e9;
     margin: 2rem 0;
 }
 
@@ -102,13 +110,13 @@ h1 {
     text-align: center;
     padding: 1rem;
     background-color: #EF6024;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, font-size 0.3s;
+    font-family: "Georgia", serif;
 }
 
 .nav-item:hover {
     background-color: #109FDB;
-      font-family: "Roboto", serif;
-      font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .nav-item a {
@@ -117,17 +125,15 @@ h1 {
     font-weight: 500;
 }
     
-   
-    
-    /* Footer/Contact section */
-   .footer {
+/* Footer */
+.footer {
     background-color: #B33F00;
     width: 80%;
     text-align: center;
     padding: 15px;
     font-size: 16px;
-    margin-top: 20px;
-      margin: 20px auto 0; 
+    margin: 20px auto 0; 
+    font-family: "Georgia", serif;
 }
 
 /* Responsive styles */
@@ -138,6 +144,14 @@ h1 {
     
     h1 {
         font-size: 36px;
+    }
+    
+    .contact-table {
+        width: 100%;
+    }
+    
+    .contact-table th, .contact-table td {
+        padding: 8px;
     }
 }
 </style>
@@ -150,36 +164,54 @@ h1 {
     
     <div class="content-section">
         <div class="text-block">
-            <p>My artistic skills are continually improving. I have found that, as I move forwards in my life, my taste has changed tremendously. Styles that have once interested me have become drab and uninspired. Check back on this website to see how I’ve grown how my art continues to evolve.
-</p>
+            <p>"Art makes life worthwhile. Without art there is no passion, just an uninterested world"</p>
         </div>
     </div>
     
     <div class="image-container">
-        <img src="Mountain.Line.jpg" alt="Contact Background" width="100%">
+        <img src="Mountain.Line.jpg" alt="Nice line art mountain" width="100%">
     </div>
     
     <div class="content-section">
         <div class="text-block">
-             <p>Instagram: MakkieMillroy
-<br>Email: <a href="mailto:mjispong@uwaterloo.ca">mjispong@uwaterloo.ca</a>
-<br>Phone: (548) - 994 8292
-</p>
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Contact Method</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>MakkieMillroy</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:mjispong@uwaterloo.ca">mjispong@uwaterloo.ca</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>(548) - 994 8292</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
   
     <nav class="navigation">
-        <div class="nav-item"><a href="#">Home</a></div>
-        <div class="nav-item"><a href="#">The Gallery</a></div>
-        <div class="nav-item"><a href="#">About Me</a></div>
-        <div class="nav-item"><a href="#">Contact Me</a></div>
+        <div class="nav-item"><a href="Website.html">Home</a></div>
+        <div class="nav-item"><a href="Website.1.html">The Gallery</a></div>
+        <div class="nav-item"><a href="Website.2.html">About Me</a></div>
+        <div class="nav-item"><a href="Website.3.html">Contact Me</a></div>
     </nav>
     
-   <div style="text-align: center; margin: 2rem 0;">
-         <img src="Star.image.jpg" alt="Additional Image">
-      </div>
+    <div style="text-align: center; margin: 2rem 0;">
+        <img src="Star.image.jpg" alt="Star background line art image">
+    </div>
+    
     <!-- Footer/Contact section -->
-        <div class="footer">Contact info -Help - Etc.</div>
+    <div class="footer">Thank you for visiting! Want to contact me? Scroll up!</div>
 </div>
 </body>
 </html>
